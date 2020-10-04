@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let numero1;
+        let numero2;
+
+        do {
+
+        numero1 = parseInt(window.prompt(`Introduce un número:`));
+        numero2 = parseInt(window.prompt(`Introduce un número:`));
+
+        let resultado = division (numero1, numero2);
+        window.alert(`Resultado de la división es: ${resultado}`);
+
+        } while (numero2 !== 0);
+
+        
+        if (numero2 > 0) {
+
+            let resultado = division (numero1, numero2);
+            console.log (resultado);
+
+        }
+
+        else {
+
+            console.log(`Divisor no puede ser cero`);
+
+        }
+        
+
+        function division (num1, num2) {
+
+            return num1 / num2;
+
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

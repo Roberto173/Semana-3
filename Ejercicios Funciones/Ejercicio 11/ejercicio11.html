@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        
+        let cantidad = parseInt(window.prompt(`Introduzca la cantidad de euros que desea cambiar:`));
+        let moneda = parseInt(window.prompt(`Seleccione la moneda de cambio:
+        1   Libra
+        2   Dólar
+        3   Yen`));
+
+        let tipoCambio = {
+
+        libra: {
+            cambio: '0,86 libras son 1 €',
+            cantidadEuros: cantidad,
+        },
+
+        dolar: {
+            cambio: '1,28611 dolares son 1 €',
+            cantidadEuros: cantidad,
+        },
+
+        yen: {
+            cambio: '129.582 yenes son 1 €',
+            cantidadEuros: cantidad,
+        },
+        }
+
+        if (moneda === 1) {
+
+            libra(cantidad);
+            
+        }
+
+        if (moneda === 2) {
+
+            dolar(cantidad);
+        }
+
+        if (moneda === 3) {
+
+            yen(cantidad);
+        }
+
+
+
+        function libra (num1) {
+
+            return window.alert(tipoCambio.libra.cambio);
+        }
+
+        function dolar (num1) {
+
+            return window.alert(tipoCambio.dolar.cambio);
+        }
+
+        function yen (num1) {
+
+            return window.alert(tipoCambio.yen.cambio);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
