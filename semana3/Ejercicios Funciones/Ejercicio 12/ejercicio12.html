@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        
+
+        do {
+        let calculo;
+        let datoEntrada = parseInt(window.prompt(`Introduzca los cuatro dígitos del año que desee:`));
+        bisiesto (datoEntrada);
+
+        } while (datoEntrada !== 0) 
+
+
+        function bisiesto (num1) {
+
+            calculo = num1 % 4;
+
+            if (calculo === 0) {
+
+                return console.log(`Año ${num1}  es bisiesto`);
+            }
+
+            else {
+
+                return console.log(`Año ${num1}  no es bisiesto`);
+            }
+
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>
