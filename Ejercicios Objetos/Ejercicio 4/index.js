@@ -1,5 +1,5 @@
 
-let datoEntrada = string(window.prompt(`Introduzca su nombre:`));
+let datoEntrada = window.prompt(`Introduzca su nombre:`);
 let parrafos = "";
 let name;
 
